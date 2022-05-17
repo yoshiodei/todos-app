@@ -1,0 +1,152 @@
+.landing-header{
+    height: 35vh;
+    width: 100vw;
+    background-color: cornflowerblue;
+    padding-top: 25px;
+
+  }
+
+  .landing-main{
+      height: 100vh;
+      width: 100vw;
+  }
+
+  .landing-header h1{
+    color: white;
+    text-align: center;
+  }
+
+  .landing__body{
+      height: 60vh;
+      position: relative;
+  }
+
+  .landing__body__div{
+      background-color: white;
+      border-radius: 4px;
+      width: 40vw;
+      min-height: 30vh;
+      position: absolute;
+      top: -130px;
+      left: calc(50% - 40vw / 2);
+      box-shadow: 4px 4px 8px rgba(169, 169, 169, 0.658);
+      overflow: hidden;
+  }
+
+  .landing__body__header{
+      height: 8vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+
+  .landing__body__header h2{
+      color: rgba(0, 0, 0, 0.61);
+      text-align: center;
+      width: 50%;
+      height: 100%;
+      line-height: 200%;
+      background-color: rgba(221, 220, 220, 0.418);
+  }
+
+  .landing__body__header h2.active {
+      background-color: white;
+      border-bottom: 2px solid cornflowerblue;
+  }
+
+  .landing__body__header h2:hover{
+      cursor: pointer;
+  }
+
+  .landing__body__content{
+      min-height: calc(100% - 8vh);
+      width: 100%;
+      padding: 30px;
+  }
+
+  .landing__body__content form{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .landing__body__content form label{
+      font-weight: bold;
+      color:rgba(27, 27, 27, 0.87);
+      margin-bottom: 2px;
+  }
+
+  /* .landing__body__content form label:last-of-type{
+      font-weight: 400;
+      font-size: 0.8em;
+  } */
+
+  .landing__body__content form label span{
+      text-decoration: underline;
+  }
+
+  .landing__body__content form label span:hover{
+    cursor: pointer;
+}
+
+  .landing__body__content form input{
+      width: 100%;
+      height: 2.5em;
+      padding: 8px;
+      color:rgba(27, 27, 27, 0.87);
+      letter-spacing: 0.8px;
+      font-weight: 600;
+      font-size: 0.8em;
+      border-radius: 3px;
+      border: 2px solid rgba(0, 0, 0, 0.226);
+      margin-bottom: 12px;
+  }
+
+  .landing__body__content form input:focus {
+      border: 2px solid cornflowerblue;
+      outline: none;
+  }
+
+  .landing__body__content form button{
+      height: 2.5em;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      border-radius: 3px;
+      background-color: cornflowerblue;
+      border: none;
+      color: white;
+      margin: 6px 0 5px;
+  }
+
+  .landing__body__content form button:hover{
+      cursor: pointer;
+      background-color: rgb(91, 135, 216);
+  }
+
+  @media (max-width: 430px){
+    .landing-header h1{
+        font-size: 1.3em;
+      }
+
+      .landing__body__div{
+        width: 93vw;
+        min-height: 30vh;
+        top: -18vh;
+        left: calc(50% - 93vw / 2);
+    }
+
+    .landing__body__header{
+        height: 6vh;
+    }
+  
+    .landing__body__header h2{
+        line-height: 200%;
+        font-size: 1.2em;
+    }
+  
+    .landing__body__content{
+        padding: 25px 15px ;
+    }
+
+  }
